@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="323.0" prefWidth="348.0" spacing="10" style="-fx-background-color: B0C4DE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carservice.AddClientFormController">
+
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <Label text="Добавление нового клиента">
+      <font>
+         <Font name="Sitka Text" size="23.0" />
+      </font></Label>
+
+    <HBox spacing="10">
+        <Label prefHeight="17.0" prefWidth="145.0" text="Фамилия, имя и отчество:" />
+        <TextField fx:id="nameField" prefHeight="25.0" prefWidth="165.0" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label prefHeight="17.0" prefWidth="144.0" text="Номер телефона:" />
+        <TextField fx:id="phoneField" prefHeight="25.0" prefWidth="166.0" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label prefHeight="17.0" prefWidth="143.0" text="ВИН-код автомобиля:" />
+        <TextField fx:id="vinField" prefHeight="25.0" prefWidth="166.0" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label prefHeight="17.0" prefWidth="144.0" text="Марка автомобиля:" />
+        <TextField fx:id="autoMarkField" prefHeight="25.0" prefWidth="166.0" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label prefHeight="17.0" prefWidth="143.0" text="Модель автомобиля:" />
+        <TextField fx:id="autoModelField" prefHeight="25.0" prefWidth="166.0" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label prefHeight="17.0" prefWidth="144.0" text="Государственный номер:" />
+        <TextField fx:id="gosNumberField" prefHeight="25.0" prefWidth="166.0" />
+    </HBox>
+
+    <HBox alignment="TOP_CENTER" spacing="10">
+        <Button onAction="#handleAddClientSubmit" prefHeight="35.0" prefWidth="176.0" style="-fx-background-color: #FFF5EE; -fx-border-color: black; -fx-border-width: 3;" text="Добавить" textAlignment="CENTER">
+         <font>
+            <Font name="Sitka Text" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    </HBox>
+
+</VBox>

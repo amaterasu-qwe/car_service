@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="238.0" prefWidth="439.0" spacing="10.0" style="-fx-background-color: B0C4DE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carservice.AddPartFormController">
+    <children>
+        <Label prefHeight="41.0" prefWidth="330.0" text="Добавление новой запчасти">
+            <font>
+                <Font name="Sitka Text" size="23.0" />
+            </font></Label>
+        <VBox spacing="5.0">
+            <children>
+                <HBox prefHeight="37.0" prefWidth="358.0" spacing="5.0">
+                    <children>
+                        <Label prefHeight="26.0" prefWidth="178.0" text="  Название запчасти:">
+                            <font>
+                                <Font size="17.0" />
+                            </font></Label>
+                        <TextField fx:id="partNameField" prefHeight="35.0" prefWidth="238.0" />
+                    </children>
+                </HBox>
+                <HBox spacing="5.0">
+                    <children>
+                        <Label prefHeight="26.0" prefWidth="179.0" text="  Цена запчасти:">
+                            <font>
+                                <Font size="17.0" />
+                            </font></Label>
+                        <TextField fx:id="partPriceField" prefHeight="35.0" prefWidth="238.0" />
+                    </children>
+                </HBox>
+                <HBox spacing="5.0">
+                    <children>
+                        <Label prefHeight="26.0" prefWidth="178.0" text="  Количество запчастей:">
+                            <font>
+                                <Font size="16.0" />
+                            </font></Label>
+                        <TextField fx:id="partCountField" prefHeight="35.0" prefWidth="238.0" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Button onAction="#handleAddPartSubmit" prefHeight="52.0" prefWidth="135.0" style="-fx-background-color: #FFF5EE; -fx-border-color: black; -fx-border-width: 3;" text="Добавить">
+            <font>
+                <Font size="22.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    </children>
+</VBox>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.carservice.ReportsDialogController">
+    <content>
+        <VBox spacing="10">
+            <Label text="Выберите тип отчета:"/>
+            <ComboBox fx:id="reportTypeComboBox">
+<!--                <items>-->
+<!--                    <FXCollections fx:factory="observableArrayList">-->
+<!--                        <String fx:value="Доходы и расходы"/>-->
+<!--                        <String fx:value="Отчет по сотрудникам"/>-->
+<!--                        &lt;!&ndash; Добавьте другие типы отчетов при необходимости &ndash;&gt;-->
+<!--                    </FXCollections>-->
+<!--                </items>-->
+            </ComboBox>
+            <HBox spacing="10">
+                <Label text="Выберите период:"/>
+                <DatePicker fx:id="startDatePicker"/>
+                <DatePicker fx:id="endDatePicker"/>
+            </HBox>
+        </VBox>
+    </content>
+    <ButtonType fx:id="generateReportButton" text="Сформировать"/>
+    <ButtonType text="Отмена"/>
+</DialogPane>

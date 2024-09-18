@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="1100.0" maxWidth="250.0" minHeight="1100.0" minWidth="250.0" prefHeight="1100.0" prefWidth="250.0" spacing="10" style="-fx-background-color: #FFF5EE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carservice.DeleteContentController">
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="УСЛУГИ" textAlignment="CENTER" wrappingWidth="250.13671875">
+      <font>
+         <Font name="Sitka Text Bold" size="27.0" />
+      </font>
+   </Text>
+    <ListView fx:id="uslugiListView" prefHeight="300.0" prefWidth="250.0" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ЗАПЧАСТИ" textAlignment="CENTER" wrappingWidth="250.13671875">
+      <font>
+         <Font name="Sitka Text Bold" size="27.0" />
+      </font>
+   </Text>
+    <ListView fx:id="zapchastiListView" prefHeight="283.0" prefWidth="250.0" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="КЛИЕНТЫ" textAlignment="CENTER" wrappingWidth="249.13671875">
+      <font>
+         <Font name="Sitka Text Bold" size="27.0" />
+      </font>
+   </Text>
+    <ListView fx:id="clientsListView" prefHeight="300.0" prefWidth="250.0" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="СОТРУДНИКИ" textAlignment="CENTER" wrappingWidth="249.13671875">
+      <font>
+         <Font name="Sitka Text Bold" size="27.0" />
+      </font>
+   </Text>
+    <ListView fx:id="sotrudnikiListView" prefHeight="298.0" prefWidth="250.0" />
+    <Button onAction="#handleDelete" prefHeight="152.0" prefWidth="250.0" style="-fx-background-color: #FFF5EE; -fx-border-width: 3; -fx-border-color: black;" text="Удалить" textAlignment="CENTER">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+</VBox>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="740.0" maxWidth="600.0" minHeight="740.0" minWidth="600.0" prefHeight="740.0" prefWidth="600.0" style="-fx-background-color: B0C4DE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carservice.ClientController">
+   <children>
+      <Text layoutX="140.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АВТОСЕРВИС" textAlignment="CENTER" wrappingWidth="323.13671875">
+         <font>
+            <Font name="Sitka Text Bold" size="47.0" />
+         </font>
+      </Text>
+      <Text layoutX="150.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать, Клиент!" textAlignment="CENTER" wrappingWidth="303.13671875">
+         <font>
+            <Font name="Sitka Text" size="29.0" />
+         </font>
+      </Text>
+      <Button layoutX="198.0" layoutY="226.0" mnemonicParsing="false" onAction="#showServices" prefHeight="57.0" prefWidth="207.0" style="-fx-background-color: #FFF5EE; -fx-border-color: #000000; -fx-border-width: 3;" text="  Услуги">
+         <font>
+            <Font name="Sitka Text Bold" size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="196.0" layoutY="294.0" mnemonicParsing="false" onAction="#showParts" prefHeight="57.0" prefWidth="207.0" style="-fx-background-color: #FFF5EE; -fx-border-color: #000000; -fx-border-width: 3;" text="    Запчасти">
+         <font>
+            <Font name="Sitka Text Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="195.0" layoutY="363.0" mnemonicParsing="false" onAction="#showAppointmentForm" prefHeight="57.0" prefWidth="207.0" style="-fx-background-color: #FFF5EE; -fx-border-color: #000000; -fx-border-width: 3;" text="       Записаться на ТО">
+         <font>
+            <Font name="Sitka Text Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tableView" layoutX="1.0" layoutY="490.0" prefHeight="252.0" prefWidth="600.0" visible="false">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Text fx:id="servicesText" layoutX="42.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нажмите &quot;Услуги&quot; для отображения информации об услугах, предоставляемых автосвервисом." textAlignment="CENTER" wrappingWidth="514.13671875">
+         <font>
+            <Font name="Sitka Text" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="partsText" layoutX="41.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нажмите &quot;Запчасти&quot; для отображения информации о запчастях, возможных для покупки в автосервисе." textAlignment="CENTER" wrappingWidth="514.13671875">
+         <font>
+            <Font name="Sitka Text" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="47.0" fitWidth="40.0" layoutX="208.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/услуги.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="40.0" layoutX="204.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/запчасти.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="32.0" layoutX="204.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/запись.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="243.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #FFF5EE; -fx-border-color: #000000; -fx-border-width: 3;" text="Вернуться" textAlignment="CENTER">
+         <font>
+            <Font name="Sitka Text Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="165.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="«АвтоПрофи»">
+         <font>
+            <Font name="Sitka Text Bold" size="38.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="56.0" fitWidth="72.0" layoutX="79.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/логотип.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="72.0" layoutX="470.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/логотип.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
